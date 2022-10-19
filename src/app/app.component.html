@@ -1,0 +1,5 @@
+  <app-nav></app-nav>
+
+  <router-outlet></router-outlet>
+  <!-- Auth Modal -->
+ <app-auth-model *ngIf="!(auth.isAuthenticated$ | async)" ></app-auth-model>
